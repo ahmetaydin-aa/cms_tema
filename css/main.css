@@ -23,15 +23,15 @@ body .row {
 
 #header {
   padding-top: 0.5rem !important;
-  padding-bottom: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
 }
 
 #header img {
-  border-radius: 1em;
+  border-radius: 1em 1em 0.3em 0.3em;
 }
 
 #main_content {
-  border-radius: 1em;
+  border-radius: 0.3em 0.3em 1em 1em;
   padding-top: 1em;
   background-color: #feffff;
   margin-bottom: 4% !important;
@@ -57,7 +57,7 @@ body .row {
   height: 100% !important;
   width: 15%;
   overflow-y: scroll;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
