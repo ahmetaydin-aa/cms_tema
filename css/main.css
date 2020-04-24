@@ -46,6 +46,11 @@ body .row {
   color: #feffff;
 }
 
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 1rem !important;
+}
+
 #navigation_menu {
   background-color: #17252a;
   color: #feffff;
@@ -75,11 +80,6 @@ body .row {
   transition: font-size 0.5s;
   margin-left: 0.25rem;
   font-size: 1rem !important;
-}
-
-#navigation_menu .avatar {
-  border-radius: 50%;
-  margin-bottom: 1rem !important;
 }
 
 #navigation_menu .name {
@@ -160,5 +160,10 @@ body .row {
 .navbar-toggler.collapsed .bottom-bar {
   -webkit-transform: rotate(0);
           transform: rotate(0);
+}
+
+#author_name, #publish_date {
+  font-family: Pacifico;
+  padding-left: 0px;
 }
 /*# sourceMappingURL=main.css.map */
