@@ -1,0 +1,164 @@
+@font-face {
+  font-family: Pacifico;
+  src: url("../webfonts/Pacifico-Regular.ttf");
+}
+
+body {
+  background-color: #def2f1 !important;
+  background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  font-family: Pacifico !important;
+}
+
+body .row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.h-5 {
+  height: 5% !important;
+}
+
+#header {
+  padding-top: 0.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+#header img {
+  border-radius: 1em;
+}
+
+#main_content {
+  border-radius: 1em;
+  padding-top: 1em;
+  background-color: #feffff;
+  margin-bottom: 4% !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#footer {
+  background-color: #2b7a78;
+}
+
+#footer a {
+  color: #feffff;
+}
+
+#navigation_menu {
+  background-color: #17252a;
+  color: #feffff;
+  height: 100% !important;
+  width: 15%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+#navigation_menu .navigation_item {
+  border-bottom: 1px solid black;
+  padding: 6px 0px 6px 12px !important;
+}
+
+#navigation_menu .navigation_item i {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-size: 1.5em;
+}
+
+#navigation_menu .navigation_item a {
+  color: #feffff;
+}
+
+#navigation_menu .navigation_item a span {
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+  margin-left: 0.25rem;
+  font-size: 1rem !important;
+}
+
+#navigation_menu .avatar {
+  border-radius: 50%;
+  margin-bottom: 1rem !important;
+}
+
+#navigation_menu .name {
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-size: 1.5rem;
+  margin-bottom: 1rem !important;
+}
+
+#navigation_menu.collapsed {
+  width: 50px !important;
+}
+
+#navigation_menu.collapsed a span {
+  font-size: 0px !important;
+}
+
+#navigation_menu.collapsed .name {
+  font-size: 0px !important;
+}
+
+.nav-escape {
+  margin-left: 50px;
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+
+.nav-escape.collapsed {
+  margin-left: 15% !important;
+}
+
+.icon-bar {
+  width: 0.75em;
+  height: 0.1em;
+  background-color: #feffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 0.1em;
+  display: block;
+}
+
+.navbar-toggler {
+  margin-left: 6px !important;
+  border: none;
+  background: transparent !important;
+  margin-bottom: 0.5em !important;
+}
+
+.navbar-toggler .top-bar {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+          transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+          transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+/*# sourceMappingURL=main.css.map */
