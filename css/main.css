@@ -56,6 +56,8 @@ body .row {
   color: #feffff;
   height: 100% !important;
   width: 15%;
+  overflow-y: scroll;
+  padding-bottom: 5%;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
@@ -166,5 +168,15 @@ body .row {
 #author_name, #publish_date {
   font-family: Pacifico;
   padding-left: 0px;
+}
+
+.disable-scrollbars {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.disable-scrollbars::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 /*# sourceMappingURL=main.css.map */

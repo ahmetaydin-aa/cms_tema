@@ -55,6 +55,8 @@ body
     color: $fourth-color
     height: 100% !important
     width: 15%
+    overflow-y: scroll
+    padding-bottom: 5%
     +transition(width 0.5s)
 
     .navigation_item
@@ -132,3 +134,10 @@ body
 #author_name, #publish_date
     font-family: Pacifico
     padding-left: 0px
+
+.disable-scrollbars
+  scrollbar-width: none /* Firefox */
+  -ms-overflow-style: none  /* IE 10+ */
+  &::-webkit-scrollbar
+    width: 0px
+    background: transparent /* Chrome/Safari/Webkit */
