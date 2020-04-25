@@ -206,9 +206,15 @@ body .row {
           transform: rotate(0);
 }
 
-#author_name, #publish_date {
+#author_name, #publish_date, #content_info {
   font-family: Pacifico;
   padding-left: 0rem;
+}
+
+#author_name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .disable-scrollbars {

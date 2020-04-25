@@ -167,9 +167,14 @@ body
 .navbar-toggler.collapsed .bottom-bar
     transform: rotate(0)
 
-#author_name, #publish_date
+#author_name, #publish_date, #content_info
     font-family: $primary-font
     padding-left: 0rem
+
+#author_name
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
 
 .disable-scrollbars
   scrollbar-width: none /* Firefox */
