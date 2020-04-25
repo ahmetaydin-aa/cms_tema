@@ -4,6 +4,38 @@
 }
 
 body {
+  font-size: 0.5rem !important;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  body {
+    font-size: 0.5rem !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  body {
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    font-size: 1rem !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 1rem !important;
+  }
+}
+
+body {
   background-color: #def2f1 !important;
   background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg");
   background-position: center;
@@ -13,8 +45,8 @@ body {
 }
 
 body .row {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
 }
 
 .h-5 {
@@ -27,12 +59,12 @@ body .row {
 }
 
 #header img {
-  border-radius: 1em 1em 0.3em 0.3em;
+  border-radius: 1rem 1rem 0.3rem 0.3rem;
 }
 
 #main_content {
-  border-radius: 0.3em 0.3em 1em 1em;
-  padding-top: 1em;
+  border-radius: 0.3rem 0.3rem 1rem 1rem;
+  padding-top: 1rem;
   background-color: #feffff;
   margin-bottom: 4% !important;
   font-family: 'Times New Roman', Times, serif;
@@ -58,19 +90,22 @@ body .row {
   width: 15%;
   overflow-y: scroll;
   padding-bottom: 4%;
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
 
 #navigation_menu .navigation_item {
-  border-bottom: 1px solid black;
-  padding: 6px 0px 6px 12px !important;
+  border-bottom: 0.05rem solid black;
+  padding: 2% 0% 2% 4% !important;
+  -webkit-transition: padding 0.5s;
+  transition: padding 0.5s;
 }
 
 #navigation_menu .navigation_item i {
   margin-left: auto !important;
   margin-right: auto !important;
-  font-size: 1.5em;
 }
 
 #navigation_menu .navigation_item a {
@@ -81,7 +116,6 @@ body .row {
   -webkit-transition: font-size 0.5s;
   transition: font-size 0.5s;
   margin-left: 0.25rem;
-  font-size: 1rem !important;
 }
 
 #navigation_menu .name {
@@ -89,47 +123,51 @@ body .row {
   transition: font-size 0.5s;
   margin-left: auto !important;
   margin-right: auto !important;
-  font-size: 1.5rem;
   margin-bottom: 1rem !important;
 }
 
 #navigation_menu.collapsed {
-  width: 50px !important;
+  width: 3% !important;
 }
 
 #navigation_menu.collapsed a span {
-  font-size: 0px !important;
+  font-size: 0rem !important;
 }
 
 #navigation_menu.collapsed .name {
-  font-size: 0px !important;
+  font-size: 0rem !important;
+}
+
+#navigation_menu.collapsed .navigation_item {
+  padding: 5% 0% 10% 20% !important;
 }
 
 .nav-escape {
-  margin-left: 50px;
-  -webkit-transition: margin-left 0.5s;
-  transition: margin-left 0.5s;
+  margin-left: 7% !important;
+  margin-right: 0rem !important;
+  -webkit-transition: margin-left 0.5s, width 0.5s;
+  transition: margin-left 0.5s, width 0.5s;
 }
 
 .nav-escape.collapsed {
   margin-left: 15% !important;
+  width: 83% !important;
 }
 
 .icon-bar {
-  width: 0.75em;
-  height: 0.1em;
+  width: 1rem;
+  height: 0.125rem;
   background-color: #feffff;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  margin-top: 0.1em;
+  margin-top: 15%;
   display: block;
 }
 
 .navbar-toggler {
-  margin-left: 6px !important;
   border: none;
   background: transparent !important;
-  margin-bottom: 0.5em !important;
+  margin-bottom: 0.5rem !important;
   cursor: pointer;
 }
 
@@ -167,7 +205,7 @@ body .row {
 
 #author_name, #publish_date {
   font-family: Pacifico;
-  padding-left: 0px;
+  padding-left: 0rem;
 }
 
 .disable-scrollbars {
@@ -176,7 +214,7 @@ body .row {
 }
 
 .disable-scrollbars::-webkit-scrollbar {
-  width: 0px;
+  width: 0rem;
   background: transparent;
 }
 /*# sourceMappingURL=main.css.map */

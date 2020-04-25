@@ -5,6 +5,7 @@
   <meta name="description" content="CMS panel tema.">
   <meta name="keywords" content="CMS, Ahmet Aydın, tema">
   <meta name="author" content="Ahmet Aydın">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <title>Ahmet Aydın</title>
   <link rel="stylesheet" type="text/css" href="./css/main.css" />
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
@@ -15,9 +16,9 @@
   <script type="text/javascript" src="./js/main.js"></script>
 </head>
 
-<body>
-  <nav id="navigation_menu" class="position-fixed float-left collapsed disable-scrollbars">
-    <div class="row">
+<body class="overflow-auto">
+  <nav id="navigation_menu" class="position-fixed float-left collapsed disable-scrollbars container">
+    <div class="row text-center">
       <span class="navbar-toggler collapsed mx-auto">
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
@@ -57,32 +58,35 @@
       </a>
     </div>
   </nav>
-  <div id="page_container" class="nav-escape px-md-3">
+  <div id="page_container" class="nav-escape px-md-3 container">
     <div id="header" class="row">
-      <div class="offset-md-2 col-md-8">
+      <div class="offset-md-2 col-8">
         <img src="./images/Header_Template.png" alt="Deneme" class="img-fluid" />
       </div>
     </div>
     <div id="page" class="row px-md-4 h-100">
-      <div id="main_content" class="offset-md-2 col-md-8">
+      <div id="main_content" class="offset-md-2 col-8">
         <div id="article_header_container" class="row">
-          <div class="offset-md-4 col-md-4 text-md-center">
+          <div class="offset-md-4 col-4 text-md-center">
             <h1>Deneme</h1>
           </div>
         </div>
         <div id="info_container" class="row align-items-center mb-3">
-          <div id="author_avatar" class="col-md-1">
-            <img class="img-fluid avatar my-auto" src="./images/batman-icon.png" alt="Author" />
+          <div id="author_avatar" class="col-1">
+            <img class="img-fluid avatar my-auto d-block" src="./images/batman-icon.png" alt="Author" />
           </div>
-          <div id="author_name" class="col-md-2">
+          <div id="author_name" class="col-2">
             <span>Ahmet Aydın</span>
           </div>
-          <div id="publish_date" class="offset-md-6 col-md-3">
+          <div id="author_name" class="offset-md-1 col-2 text-center">
+            <span><b id="comment_count">0</b> yorum.</span>
+          </div>
+          <div id="publish_date" class="offset-md-3 col-3 text-right">
             <span>23/04/2020 00:00</span>
           </div>
         </div>
         <div id="content_container" class="row">
-          <div class="col-md-12">
+          <div class="col-12">
             <!-- <div class="w3-include-html" w3-include-url="./include_deneme.html"></div> -->
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.

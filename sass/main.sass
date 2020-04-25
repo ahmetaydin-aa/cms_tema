@@ -7,6 +7,34 @@ $fourth-color: #feffff
     font-family: Pacifico
     src: url("../webfonts/Pacifico-Regular.ttf")
 
+// 
+// Extra small devices (portrait phones, less than 544px) 
+// No media query since this is the default in Bootstrap because it is "mobile first"
+//
+body
+    font-size: 0.5rem !important //1rem = 16px
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px)
+    body
+        font-size: 0.5rem !important
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px)
+    body
+        font-size: 0.75rem !important
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)
+    body
+        font-size: 1rem !important
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)  
+    body
+        font-size: 1rem !important
+
+
 =transition($transition...)
     -moz-transition: $transition
     -o-transition: $transition
@@ -22,8 +50,8 @@ body
     font-family: Pacifico !important
 
     .row
-        margin-left: 0px !important
-        margin-right: 0px !important
+        margin-left: 0rem !important
+        margin-right: 0rem !important
 
 .h-5
     height: 5% !important
@@ -32,11 +60,11 @@ body
     padding-top: 0.5rem !important
     margin-bottom: 0.75rem !important
     img
-        border-radius: 1em 1em 0.3em 0.3em
+        border-radius: 1rem 1rem 0.3rem 0.3rem
 
 #main_content
-    border-radius: 0.3em 0.3em 1em 1em
-    padding-top: 1em
+    border-radius: 0.3rem 0.3rem 1rem 1rem
+    padding-top: 1rem
     background-color: $fourth-color
     margin-bottom: 4% !important
     font-family: 'Times New Roman', Times, serif
@@ -57,58 +85,63 @@ body
     width: 15%
     overflow-y: scroll
     padding-bottom: 4%
+    padding-left: 0rem !important
+    padding-right: 0rem !important
     +transition(width 0.5s)
 
     .navigation_item
-        border-bottom: 1px solid black
-        padding: 6px 0px 6px 12px !important
+        border-bottom: 0.05rem solid black
+        padding: 2% 0% 2% 4% !important
+        +transition(padding 0.5s)
+        
         i
             margin-left: auto !important
             margin-right: auto !important
-            font-size: 1.5em
         a
             color: $fourth-color
             span
                 +transition(font-size 0.5s)
                 margin-left: 0.25rem
-                font-size: 1rem !important
 
     .name
         +transition(font-size 0.5s)
         margin-left: auto !important
         margin-right: auto !important
-        font-size: 1.5rem
         margin-bottom: 1rem !important
 
 #navigation_menu.collapsed
-    width: 50px !important
+    width: 3% !important
     a
         span
-            font-size: 0px !important
+            font-size: 0rem !important
 
     .name
-        font-size: 0px !important
+        font-size: 0rem !important
+    
+    .navigation_item
+        padding: 5% 0% 10% 20% !important
 
 .nav-escape
-    margin-left: 50px
-    +transition(margin-left 0.5s)
+    margin-left: 7% !important
+    margin-right: 0rem !important
+    +transition(margin-left 0.5s, width 0.5s)
 
 .nav-escape.collapsed
     margin-left: 15% !important
+    width: 83% !important
 
 .icon-bar
-    width: 0.75em
-    height: 0.1em
+    width: 1rem
+    height: 0.125rem
     background-color: $fourth-color
     transition: all 0.2s
-    margin-top: 0.1em
+    margin-top: 15%
     display: block
 
 .navbar-toggler
-    margin-left: 6px !important
     border: none
     background: transparent !important
-    margin-bottom: 0.5em !important
+    margin-bottom: 0.5rem !important
     cursor: pointer
 
 .navbar-toggler .top-bar
@@ -133,11 +166,11 @@ body
 
 #author_name, #publish_date
     font-family: Pacifico
-    padding-left: 0px
+    padding-left: 0rem
 
 .disable-scrollbars
   scrollbar-width: none /* Firefox */
   -ms-overflow-style: none  /* IE 10+ */
   &::-webkit-scrollbar
-    width: 0px
+    width: 0rem
     background: transparent /* Chrome/Safari/Webkit */
