@@ -66,7 +66,7 @@ body .row {
   padding-top: 1rem;
   background-color: #feffff;
   margin-bottom: 4% !important;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #footer {
@@ -221,6 +221,10 @@ body .row {
   font-family: Pacifico;
 }
 
+.secondary_font {
+  font-family: "Times New Roman", Times, serif;
+}
+
 #new_comment_field {
   border: 1px dotted #505050;
   margin-bottom: 2rem;
@@ -241,5 +245,6 @@ body .row {
 
 #new_comment_field input {
   width: 100%;
+  font-family: "Times New Roman", Times, serif;
 }
 /*# sourceMappingURL=main.css.map */

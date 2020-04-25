@@ -3,6 +3,7 @@ $secondary-color: #17252a
 $third-color: #2b7a78
 $fourth-color: #feffff
 $primary-font: Pacifico
+$secondary-font: 'Times New Roman', Times, serif
 
 @font-face
     font-family: Pacifico
@@ -67,7 +68,7 @@ body
     padding-top: 1rem
     background-color: $fourth-color
     margin-bottom: 4% !important
-    font-family: 'Times New Roman', Times, serif
+    font-family: $secondary-font
 
 #footer
     a
@@ -178,6 +179,9 @@ body
 .primary_font
     font-family: $primary-font
 
+.secondary_font
+    font-family: $secondary-font
+
 #new_comment_field
     border: 1px dotted #505050
     margin-bottom: 2rem
@@ -190,3 +194,4 @@ body
         margin-bottom: 1rem
     input
         width: 100%
+        font-family: $secondary-font
