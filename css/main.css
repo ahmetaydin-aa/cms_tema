@@ -217,4 +217,30 @@ body .row {
   width: 0rem;
   background: transparent;
 }
+
+.primary_font {
+  font-family: Pacifico;
+}
+
+#new_comment_field {
+  border: 1px dotted #505050;
+  margin-bottom: 2rem;
+}
+
+#new_comment_field legend {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#new_comment_field .row {
+  margin-bottom: 1rem;
+}
+
+#new_comment_field input {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

@@ -2,6 +2,7 @@ $primary-color: #def2f1
 $secondary-color: #17252a
 $third-color: #2b7a78
 $fourth-color: #feffff
+$primary-font: Pacifico
 
 @font-face
     font-family: Pacifico
@@ -47,7 +48,7 @@ body
     background-position: center
     background-repeat: repeat
     background-size: cover
-    font-family: Pacifico !important
+    font-family: $primary-font !important
 
     .row
         margin-left: 0rem !important
@@ -165,7 +166,7 @@ body
     transform: rotate(0)
 
 #author_name, #publish_date
-    font-family: Pacifico
+    font-family: $primary-font
     padding-left: 0rem
 
 .disable-scrollbars
@@ -174,3 +175,19 @@ body
   &::-webkit-scrollbar
     width: 0rem
     background: transparent /* Chrome/Safari/Webkit */
+
+.primary_font
+    font-family: $primary-font
+
+#new_comment_field
+    border: 1px dotted #505050
+    margin-bottom: 2rem
+    legend
+        width: fit-content
+        margin-left: 1rem
+        padding-left: 0.5rem
+        padding-right: 0.5rem
+    .row
+        margin-bottom: 1rem
+    input
+        width: 100%
