@@ -186,6 +186,7 @@ $secondary-font: 'Times New Roman', Times, serif
         border: none
         background: transparent !important
         margin-bottom: (0.5rem*$size_scale) !important
+        margin-left: (0.25rem*$size_scale)
         cursor: pointer
         padding: (0.25rem*$size_scale) (0.25rem*$size_scale)
 
@@ -199,6 +200,9 @@ $secondary-font: 'Times New Roman', Times, serif
     .navbar-toggler .bottom-bar
         transform: rotate(-45deg)
         transform-origin: 10% 90%
+
+    .navbar-toggler.collapsed
+        animation: nav-item-reduce 0.5s
 
     .navbar-toggler.collapsed .top-bar
         transform: rotate(0)
