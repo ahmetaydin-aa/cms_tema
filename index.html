@@ -5,7 +5,7 @@
   <meta name="description" content="CMS panel tema.">
   <meta name="keywords" content="CMS, Ahmet Aydın, tema">
   <meta name="author" content="Ahmet Aydın">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ahmet Aydın</title>
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/fa-all.min.css" />
@@ -16,7 +16,7 @@
   <script type="text/javascript" src="./js/tinymce/tinymce.min.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
   <script>
-    tinymce.init({ selector: '#comment_textarea' });
+    tinymce.init({ selector: '#comment_textarea', plugins: "autoresize" });
   </script>
 </head>
 
@@ -68,7 +68,7 @@
         <img src="./images/Header_Template.png" alt="Deneme" class="img-fluid" />
       </div>
     </div>
-    <div id="page" class="row px-4 h-100">
+    <div id="page" class="row">
       <div id="main_content" class="offset-2 col-8">
         <div id="article_header_container" class="row">
           <div class="offset-4 col-4 text-center">
@@ -77,7 +77,7 @@
         </div>
         <div id="info_container" class="row align-items-center mb-3">
           <div id="author_avatar" class="col-2">
-            <img class="img-fluid avatar my-auto d-block" src="./images/batman-icon.png" alt="Author" />
+            <img class="img-fluid avatar" src="./images/batman-icon.png" alt="Author" />
           </div>
           <div id="author_name" class="col-3">
             <span>Ahmet Aydın</span>
@@ -191,12 +191,13 @@
         </div>
       </div>
     </div>
-    <div id="footer" class="row h-5 fixed-bottom text-center d-block">
-      <span>
-        Designed by
-        <a href="https://www.ahmetaydin.com.tr" target="_blank">Ahmet Aydın</a></span>
+    <div id="footer" class="row h-5 fixed-bottom text-center">
+      <div class="col-12">
+        <span>
+          Designed by
+          <a href="https://www.ahmetaydin.com.tr" target="_blank">Ahmet Aydın</a>
+        </span>
+      </div>
     </div>
   </div>
 </body>
-
-</script>

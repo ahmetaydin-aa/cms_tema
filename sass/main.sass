@@ -9,33 +9,21 @@ $secondary-font: 'Times New Roman', Times, serif
     font-family: Pacifico
     src: url("../webfonts/Pacifico-Regular.ttf")
 
-// 
-// Extra small devices (portrait phones, less than 544px) 
-// No media query since this is the default in Bootstrap because it is "mobile first"
-//
-body
-    font-size: 0.5rem !important //1rem = 16px
+@keyframes nav-item-reduce
+  0%
+    margin-left: 0rem
+  
+  25%
+    margin-left: 5%
+  
+  50%
+    margin-left: 11%
 
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px)
-    body
-        font-size: 0.5rem !important
- 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px)
-    body
-        font-size: 0.75rem !important
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px)
-    body
-        font-size: 1rem !important
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px)  
-    body
-        font-size: 1rem !important
+  75%
+    margin-left: 15%
 
+  100%
+    margin-left: 22%
 
 =transition($transition...)
     -moz-transition: $transition
@@ -43,162 +31,242 @@ body
     -webkit-transition: $transition
     transition: $transition
 
-body
-    background-color: $primary-color !important
-    background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg")
-    background-position: center
-    background-repeat: repeat
-    font-family: $primary-font !important
 
-    .row
-        margin-left: 0rem !important
-        margin-right: 0rem !important
+=responsive_fix($size_scale)
+    body
+        font-size: (1rem*$size_scale) !important
+    
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+        padding-right: (1rem*$size_scale)
+        padding-left: (1rem*$size_scale)
 
-.h-5
-    height: 5% !important
+    legend
+        font-size: (1.5rem*$size_scale)
+    
+    .btn
+        font-size: (1rem*$size_scale) !important
+        padding: (.375rem*$size_scale) (.75rem*$size_scale) !important
 
-#header
-    padding-top: 0.5rem !important
-    margin-bottom: 0.75rem !important
-    img
-        border-radius: 1rem 1rem 0.3rem 0.3rem
+    h1, .h1
+        font-size: (2.5rem*$size_scale) !important
 
-#main_content
-    border-radius: 0.3rem 0.3rem 1rem 1rem
-    padding-top: 1rem
-    background-color: $fourth-color
-    margin-bottom: 4% !important
-    font-family: $secondary-font
-    p
-        text-align: justify
+    h2, .h2
+        font-size: (2rem*$size_scale) !important
 
-#footer
-    a
-        color: $fourth-color
-    background-color: $third-color
+    h3, .h3
+        font-size: (1.75rem*$size_scale) !important
 
-.avatar
-    border-radius: 50%
-    margin-bottom: 1rem !important
+    h4, .h4
+        font-size: (1.5rem*$size_scale) !important
 
-#navigation_menu
-    background-color: $secondary-color
-    color: $fourth-color
-    height: 100% !important
-    width: 15%
-    overflow-y: scroll
-    padding-bottom: 4%
-    padding-left: 0rem !important
-    padding-right: 0rem !important
-    +transition(width 0.5s)
+    h5, .h5
+        font-size: (1.25rem*$size_scale) !important
 
-    .navigation_item
-        border-bottom: 0.05rem solid black
-        padding: 2% 0% 2% 4% !important
-        +transition(padding 0.5s)
-        
-        i
-            margin-left: auto !important
-            margin-right: auto !important
+    h6, .h6
+        font-size: (1rem*$size_scale) !important
+
+    .display-1
+        font-size: (6rem*$size_scale) !important
+
+    .display-2
+        font-size: (5.5rem*$size_scale) !important
+
+    .display-3
+        font-size: (4.5rem*$size_scale) !important
+
+    .display-4
+        font-size: 3.5*$size_scale rem !important
+    
+
+    body
+        background-color: $primary-color !important
+        background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg")
+        background-position: center
+        background-repeat: repeat
+        font-family: $primary-font !important
+        line-height: (1.5*$size_scale)
+
+        .row
+            margin-left: (0rem*$size_scale) !important
+            margin-right: (0rem*$size_scale) !important
+
+    .h-5
+        height: 5% !important
+
+    #header
+        padding-top: (0.5rem*$size_scale) !important
+        margin-bottom: (0.75rem*$size_scale) !important
+        img
+            border-radius: (1rem*$size_scale) (1rem*$size_scale) (0.3rem*$size_scale) (0.3rem*$size_scale)
+
+    #page
+        padding-left: (1.5rem*$size_scale)
+        padding-right: (1.5rem*$size_scale)
+
+    #main_content
+        border-radius: (0.3rem*$size_scale) (0.3rem*$size_scale) (1rem*$size_scale) (1rem*$size_scale)
+        padding-top: (1rem*$size_scale)
+        background-color: $fourth-color
+        margin-bottom: 4% !important
+        font-family: $secondary-font
+        p
+            text-align: justify
+
+    #footer
         a
             color: $fourth-color
-            span
-                +transition(font-size 0.5s)
-                margin-left: 0.25rem
-
-    .name
-        +transition(font-size 0.5s)
-        margin-left: auto !important
-        margin-right: auto !important
-        margin-bottom: 1rem !important
-
-#navigation_menu.collapsed
-    width: 3% !important
-    a
         span
-            font-size: 0rem !important
+            line-height: 200%
+        background-color: $third-color
 
-    .name
-        font-size: 0rem !important
+    .avatar
+        border-radius: 50%
+
+    #navigation_menu
+        background-color: $secondary-color
+        color: $fourth-color
+        height: 100% !important
+        width: 15%
+        overflow-y: scroll
+        padding-bottom: 4%
+        padding-left: (0rem*$size_scale) !important
+        padding-right: (0rem*$size_scale) !important
+        +transition(width 0.5s)
+
+        .navigation_item
+            border-bottom: (0.05rem*$size_scale) solid black
+            padding: 5% 0% 5% 4% !important
+            
+            a
+                color: $fourth-color
+                line-height: 0
+                +transition(margin 0.5s)
+                span
+                    font-size: (0.75rem*$size_scale)
+                    margin-left: (0.25rem*$size_scale)
+
+        .name
+            +transition(font-size 0.5s)
+            margin-left: auto !important
+            margin-right: auto !important
+            margin-bottom: (1rem*$size_scale) !important
+
+    #navigation_menu.collapsed
+        width: 3% !important
+        a
+            animation: nav-item-reduce 0.5s
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 10%
+            margin-top: 10%
+            span
+                display: none
+
+        .name
+            font-size: (0rem*$size_scale) !important
+
+    .nav-escape
+        margin-left: 7% !important
+        margin-right: (0rem*$size_scale) !important
+        +transition(margin-left 0.5s, width 0.5s)
+
+    .nav-escape.collapsed
+        margin-left: 15% !important
+        width: 83% !important
+
+    .icon-bar
+        width: (1rem*$size_scale)
+        height: (0.125rem*$size_scale)
+        background-color: $fourth-color
+        transition: all 0.2s
+        margin-top: 15%
+        display: block
+
+    .navbar-toggler
+        border: none
+        background: transparent !important
+        margin-bottom: (0.5rem*$size_scale) !important
+        cursor: pointer
+        padding: (0.25rem*$size_scale) (0.25rem*$size_scale)
+
+    .navbar-toggler .top-bar
+        transform: rotate(45deg)
+        transform-origin: 10% 10%
+
+    .navbar-toggler .middle-bar
+        opacity: 0
+
+    .navbar-toggler .bottom-bar
+        transform: rotate(-45deg)
+        transform-origin: 10% 90%
+
+    .navbar-toggler.collapsed .top-bar
+        transform: rotate(0)
+
+    .navbar-toggler.collapsed .middle-bar
+        opacity: 1
+
+    .navbar-toggler.collapsed .bottom-bar
+        transform: rotate(0)
+
+    #author_name, #publish_date, #content_info
+        font-family: $primary-font
+        padding-left: (0rem*$size_scale)
+        text-overflow: ellipsis
+        overflow: hidden
+        white-space: nowrap
+        span
+            line-height: normal
+
+    .disable-scrollbars
+        scrollbar-width: none /* Firefox */
+        -ms-overflow-style: none  /* IE 10+ */
     
-    .navigation_item
-        padding: 5% 0% 10% 20% !important
+    #navigation_menu::-webkit-scrollbar
+        width: (0rem*$size_scale)
+        background: transparent /* Chrome/Safari/Webkit */
 
-.nav-escape
-    margin-left: 7% !important
-    margin-right: 0rem !important
-    +transition(margin-left 0.5s, width 0.5s)
+    .primary_font
+        font-family: $primary-font
 
-.nav-escape.collapsed
-    margin-left: 15% !important
-    width: 83% !important
-
-.icon-bar
-    width: 1rem
-    height: 0.125rem
-    background-color: $fourth-color
-    transition: all 0.2s
-    margin-top: 15%
-    display: block
-
-.navbar-toggler
-    border: none
-    background: transparent !important
-    margin-bottom: 0.5rem !important
-    cursor: pointer
-
-.navbar-toggler .top-bar
-    transform: rotate(45deg)
-    transform-origin: 10% 10%
-
-.navbar-toggler .middle-bar
-    opacity: 0
-
-.navbar-toggler .bottom-bar
-    transform: rotate(-45deg)
-    transform-origin: 10% 90%
-
-.navbar-toggler.collapsed .top-bar
-    transform: rotate(0)
-
-.navbar-toggler.collapsed .middle-bar
-    opacity: 1
-
-.navbar-toggler.collapsed .bottom-bar
-    transform: rotate(0)
-
-#author_name, #publish_date, #content_info
-    font-family: $primary-font
-    padding-left: 0rem
-
-#author_name
-    text-overflow: ellipsis
-    overflow: hidden
-    white-space: nowrap
-
-.disable-scrollbars
-  scrollbar-width: none /* Firefox */
-  -ms-overflow-style: none  /* IE 10+ */
-  &::-webkit-scrollbar
-    width: 0rem
-    background: transparent /* Chrome/Safari/Webkit */
-
-.primary_font
-    font-family: $primary-font
-
-.secondary_font
-    font-family: $secondary-font
-
-#new_comment_field
-    border: 1px dotted #505050
-    margin-bottom: 2rem
-    legend
-        width: fit-content
-        margin-left: 1rem
-        padding-left: 0.5rem
-        padding-right: 0.5rem
-    .row
-        margin-bottom: 1rem
-    input
-        width: 100%
+    .secondary_font
         font-family: $secondary-font
+
+    #new_comment_field
+        border: 1px dotted #505050
+        margin-bottom: (2rem*$size_scale)
+        legend
+            width: fit-content
+            margin-left: (1rem*$size_scale)
+            padding-left: (0.5rem*$size_scale)
+            padding-right: (0.5rem*$size_scale)
+        .row
+            margin-bottom: (1rem*$size_scale)
+        input
+            width: 100%
+            font-family: $secondary-font
+
+// 
+// Extra small devices (portrait phones, less than 544px) 
+// No media query since this is the default in Bootstrap because it is "mobile first"
+//
++responsive_fix(0.5)
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px)
+    +responsive_fix(0.5)
+
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px)
+    +responsive_fix(0.75)
+
+    
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)
+    +responsive_fix(1)
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)  
+    +responsive_fix(1)
