@@ -69,6 +69,10 @@ body .row {
   font-family: "Times New Roman", Times, serif;
 }
 
+#main_content p {
+  text-align: justify;
+}
+
 #footer {
   background-color: #2b7a78;
 }
