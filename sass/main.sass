@@ -238,7 +238,6 @@ $secondary-font: 'Times New Roman', Times, serif
 
     #new_comment_field
         border: 1px dotted #505050
-        margin-bottom: (2rem*$size_scale)
         legend
             width: fit-content
             margin-left: (1rem*$size_scale)
@@ -249,7 +248,19 @@ $secondary-font: 'Times New Roman', Times, serif
         input
             width: 100%
             font-family: $secondary-font
+    
+    #comments_container
+        margin-bottom: (2rem*$size_scale)
 
+    .comment
+        padding: (0.5rem*$size_scale)
+        .comment-author
+            margin-top: (0.5rem*$size_scale)
+            font-family: $primary-font
+        .comment-content
+            padding: (0.5rem*$size_scale)
+            border: (0.05rem) dashed #505050
+            border-radius: (0.5rem*$size_scale)
 // 
 // Extra small devices (portrait phones, less than 544px) 
 // No media query since this is the default in Bootstrap because it is "mobile first"

@@ -83,7 +83,7 @@
             <span>Ahmet Aydın</span>
           </div>
           <div id="content_info" class="col-2 text-center">
-            <span><b id="comment_count">0</b> yorum.</span>
+            <span><b id="comment_count">1</b> yorum.</span>
           </div>
           <div id="publish_date" class="offset-1 col-4 text-right">
             <span>23/04/2020 00:00</span>
@@ -184,9 +184,32 @@
             </fieldset>
           </div>
         </div>
+        <hr>
         <div id="comments_container" class="row">
           <div class="col-12">
-
+            <!-- comment_id yerine veritabanından id gelebilir. Format: comment_{id} -->
+            <!-- Avatar gravatar'dan çekilecek, yoksa default koyulabilir. -->
+            <div id="comment_id" class="comment">
+              <div class="row">
+                <div class="col-2">
+                  <div class="row">
+                    <img src="https://www.gravatar.com/avatar/eda71a19b479fad678f19aa974fb363e.png?s=250" alt="Ahmet Aydın" class="img-fluid avatar mx-auto d-block mb-0" />
+                  </div>
+                  <div class="row comment-author text-center">
+                    <span>Ahmet Aydın</span>
+                  </div>
+                </div>
+                <div class="col-10 comment-content">
+                  <p>Bu bir&nbsp;<strong>deneme</strong> yazısıdır. L&uuml;tfen&nbsp;<em>dikkate</em> almayınız.</p>
+                  <p style="text-align: center;">Ortalama denemesi</p>
+                  <p style="text-align: left; padding-left: 40px;">İntent denemesi</p>
+                  <p style="text-align: left;"><code>function deneme() {</code></p>
+                  <p style="text-align: left; padding-left: 40px;"><code>console.log("deneme");</code></p>
+                  <p style="text-align: left;"><code>}</code></p>
+                </div>
+              </div>
+              <hr>
+            </div>
           </div>
         </div>
       </div>
