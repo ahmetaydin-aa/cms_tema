@@ -16,7 +16,37 @@
   <script type="text/javascript" src="./js/tinymce/tinymce.min.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
   <script>
-    tinymce.init({ selector: '#comment_textarea', plugins: "autoresize" });
+    tinymce.init({
+      selector: '#comment_textarea',
+      plugins: ["autoresize", "wordcount", "hr", "emoticons", "codesample", "help", "image", "imagetools", "link"],
+      elementpath: false,
+      toolbar_mode: "floating",
+      default_link_target: "_blank",
+      link_assume_external_targets: "https",
+      link_default_protocol: "https",
+      target_list: false,
+      toolbar: [
+        {
+          name: 'history', items: ['undo', 'redo']
+        },
+        {
+          name: 'styles', items: ['styleselect']
+        },
+        {
+          name: 'formatting', items: ['bold', 'italic']
+        },
+        {
+          name: 'alignment', items: ['alignleft', 'aligncenter', 'alignright', 'alignjustify']
+        },
+        {
+          name: 'indentation', items: ['outdent', 'indent']
+        },
+        {
+          name: 'extra', items: ['link', 'codesample']
+        }
+      ],
+      //menubar: "insert"
+    });
   </script>
 </head>
 
@@ -193,7 +223,8 @@
               <div class="row">
                 <div class="col-2">
                   <div class="row">
-                    <img src="https://www.gravatar.com/avatar/eda71a19b479fad678f19aa974fb363e.png?s=250" alt="Ahmet Aydın" class="img-fluid avatar mx-auto d-block mb-0" />
+                    <img src="https://www.gravatar.com/avatar/eda71a19b479fad678f19aa974fb363e.png?s=250"
+                      alt="Ahmet Aydın" class="img-fluid avatar mx-auto d-block mb-0" />
                   </div>
                   <div class="row comment-author text-center">
                     <span>Ahmet Aydın</span>
