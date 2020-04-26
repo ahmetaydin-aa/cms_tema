@@ -79,6 +79,7 @@ $secondary-font: 'Times New Roman', Times, serif
     
 
     body
+        line-height: (1.5rem*$size_scale) !important
         background-color: $primary-color !important
         background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg")
         background-position: center
@@ -111,7 +112,6 @@ $secondary-font: 'Times New Roman', Times, serif
         font-family: $secondary-font
         p
             text-align: justify
-            line-height: (1.5rem*$size_scale) !important
 
     #footer
         a
@@ -262,6 +262,8 @@ $secondary-font: 'Times New Roman', Times, serif
             padding: (0.5rem*$size_scale)
             border: (0.05rem) dashed #505050
             border-radius: (0.5rem*$size_scale)
+            p
+                margin-bottom: (0.125rem*$size_scale)
 // 
 // Extra small devices (portrait phones, less than 544px) 
 // No media query since this is the default in Bootstrap because it is "mobile first"

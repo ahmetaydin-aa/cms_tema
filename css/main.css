@@ -98,6 +98,7 @@ h6, .h6 {
 }
 
 body {
+  line-height: 0.75rem !important;
   background-color: #def2f1 !important;
   background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg");
   background-position: center;
@@ -139,7 +140,6 @@ body .row {
 
 #main_content p {
   text-align: justify;
-  line-height: 0.75rem !important;
 }
 
 #footer {
@@ -356,6 +356,10 @@ body .row {
   border-radius: 0.25rem;
 }
 
+.comment .comment-content p {
+  margin-bottom: 0.0625rem;
+}
+
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
   body {
@@ -403,6 +407,7 @@ body .row {
     font-size: 1.75 rem !important;
   }
   body {
+    line-height: 0.75rem !important;
     background-color: #def2f1 !important;
     background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg");
     background-position: center;
@@ -437,7 +442,6 @@ body .row {
   }
   #main_content p {
     text-align: justify;
-    line-height: 0.75rem !important;
   }
   #footer {
     background-color: #2b7a78;
@@ -615,6 +619,9 @@ body .row {
     border: 0.05rem dashed #505050;
     border-radius: 0.25rem;
   }
+  .comment .comment-content p {
+    margin-bottom: 0.0625rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -664,6 +671,7 @@ body .row {
     font-size: 2.625 rem !important;
   }
   body {
+    line-height: 1.125rem !important;
     background-color: #def2f1 !important;
     background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg");
     background-position: center;
@@ -698,7 +706,6 @@ body .row {
   }
   #main_content p {
     text-align: justify;
-    line-height: 1.125rem !important;
   }
   #footer {
     background-color: #2b7a78;
@@ -876,6 +883,9 @@ body .row {
     border: 0.05rem dashed #505050;
     border-radius: 0.375rem;
   }
+  .comment .comment-content p {
+    margin-bottom: 0.09375rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -925,6 +935,7 @@ body .row {
     font-size: 3.5 rem !important;
   }
   body {
+    line-height: 1.5rem !important;
     background-color: #def2f1 !important;
     background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg");
     background-position: center;
@@ -959,7 +970,6 @@ body .row {
   }
   #main_content p {
     text-align: justify;
-    line-height: 1.5rem !important;
   }
   #footer {
     background-color: #2b7a78;
@@ -1136,6 +1146,9 @@ body .row {
     padding: 0.5rem;
     border: 0.05rem dashed #505050;
     border-radius: 0.5rem;
+  }
+  .comment .comment-content p {
+    margin-bottom: 0.125rem;
   }
 }
 
@@ -1186,6 +1199,7 @@ body .row {
     font-size: 3.5 rem !important;
   }
   body {
+    line-height: 1.5rem !important;
     background-color: #def2f1 !important;
     background-image: url("../images/bgs/Background-patterns-web-dark-website-blogger-beautiful-image-.jpg");
     background-position: center;
@@ -1220,7 +1234,6 @@ body .row {
   }
   #main_content p {
     text-align: justify;
-    line-height: 1.5rem !important;
   }
   #footer {
     background-color: #2b7a78;
@@ -1397,6 +1410,9 @@ body .row {
     padding: 0.5rem;
     border: 0.05rem dashed #505050;
     border-radius: 0.5rem;
+  }
+  .comment .comment-content p {
+    margin-bottom: 0.125rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
