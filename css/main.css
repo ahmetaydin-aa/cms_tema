@@ -139,6 +139,7 @@ body .row {
 
 #main_content p {
   text-align: justify;
+  line-height: 0.75rem !important;
 }
 
 #footer {
@@ -436,6 +437,7 @@ body .row {
   }
   #main_content p {
     text-align: justify;
+    line-height: 0.75rem !important;
   }
   #footer {
     background-color: #2b7a78;
@@ -696,6 +698,7 @@ body .row {
   }
   #main_content p {
     text-align: justify;
+    line-height: 1.125rem !important;
   }
   #footer {
     background-color: #2b7a78;
@@ -956,6 +959,7 @@ body .row {
   }
   #main_content p {
     text-align: justify;
+    line-height: 1.5rem !important;
   }
   #footer {
     background-color: #2b7a78;
@@ -1216,6 +1220,7 @@ body .row {
   }
   #main_content p {
     text-align: justify;
+    line-height: 1.5rem !important;
   }
   #footer {
     background-color: #2b7a78;
