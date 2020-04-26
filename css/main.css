@@ -5,7 +5,7 @@
 
 @-webkit-keyframes nav-item-reduce {
   0% {
-    margin-left: 0rem;
+    margin-left: 0%;
   }
   25% {
     margin-left: 5%;
@@ -23,7 +23,7 @@
 
 @keyframes nav-item-reduce {
   0% {
-    margin-left: 0rem;
+    margin-left: 0%;
   }
   25% {
     margin-left: 5%;
@@ -164,7 +164,7 @@ body .row {
   height: 100% !important;
   width: 15%;
   overflow-y: scroll;
-  padding-bottom: 4%;
+  padding-bottom: 10%;
   padding-left: 0rem !important;
   padding-right: 0rem !important;
   -webkit-transition: width 0.5s;
@@ -178,7 +178,7 @@ body .row {
 
 #navigation_menu .navigation_item a {
   color: #feffff;
-  line-height: 0;
+  word-break: break-all;
   -webkit-transition: margin 0.5s;
   transition: margin 0.5s;
 }
@@ -461,7 +461,7 @@ body .row {
     height: 100% !important;
     width: 15%;
     overflow-y: scroll;
-    padding-bottom: 4%;
+    padding-bottom: 10%;
     padding-left: 0rem !important;
     padding-right: 0rem !important;
     -webkit-transition: width 0.5s;
@@ -473,7 +473,7 @@ body .row {
   }
   #navigation_menu .navigation_item a {
     color: #feffff;
-    line-height: 0;
+    word-break: break-all;
     -webkit-transition: margin 0.5s;
     transition: margin 0.5s;
   }
@@ -725,7 +725,7 @@ body .row {
     height: 100% !important;
     width: 15%;
     overflow-y: scroll;
-    padding-bottom: 4%;
+    padding-bottom: 10%;
     padding-left: 0rem !important;
     padding-right: 0rem !important;
     -webkit-transition: width 0.5s;
@@ -737,7 +737,7 @@ body .row {
   }
   #navigation_menu .navigation_item a {
     color: #feffff;
-    line-height: 0;
+    word-break: break-all;
     -webkit-transition: margin 0.5s;
     transition: margin 0.5s;
   }
@@ -989,7 +989,7 @@ body .row {
     height: 100% !important;
     width: 15%;
     overflow-y: scroll;
-    padding-bottom: 4%;
+    padding-bottom: 10%;
     padding-left: 0rem !important;
     padding-right: 0rem !important;
     -webkit-transition: width 0.5s;
@@ -1001,7 +1001,7 @@ body .row {
   }
   #navigation_menu .navigation_item a {
     color: #feffff;
-    line-height: 0;
+    word-break: break-all;
     -webkit-transition: margin 0.5s;
     transition: margin 0.5s;
   }
@@ -1253,7 +1253,7 @@ body .row {
     height: 100% !important;
     width: 15%;
     overflow-y: scroll;
-    padding-bottom: 4%;
+    padding-bottom: 10%;
     padding-left: 0rem !important;
     padding-right: 0rem !important;
     -webkit-transition: width 0.5s;
@@ -1265,7 +1265,7 @@ body .row {
   }
   #navigation_menu .navigation_item a {
     color: #feffff;
-    line-height: 0;
+    word-break: break-all;
     -webkit-transition: margin 0.5s;
     transition: margin 0.5s;
   }

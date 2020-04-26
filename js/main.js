@@ -6,7 +6,6 @@ $(document).ready(() => {
 
   navigation_ham_menu.click((event) => {
     var is_collapsed = navigation_ham_menu.hasClass("collapsed");
-    console.log(is_collapsed);
     if (is_collapsed) {
       navigation_ham_menu.removeClass("collapsed");
       navigation_ham_menu.removeClass("mx-auto");

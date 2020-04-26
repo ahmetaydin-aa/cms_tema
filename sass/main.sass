@@ -11,7 +11,7 @@ $secondary-font: 'Times New Roman', Times, serif
 
 @keyframes nav-item-reduce
   0%
-    margin-left: 0rem
+    margin-left: 0%
   
   25%
     margin-left: 5%
@@ -129,7 +129,7 @@ $secondary-font: 'Times New Roman', Times, serif
         height: 100% !important
         width: 15%
         overflow-y: scroll
-        padding-bottom: 4%
+        padding-bottom: 10%
         padding-left: (0rem*$size_scale) !important
         padding-right: (0rem*$size_scale) !important
         +transition(width 0.5s)
@@ -140,7 +140,7 @@ $secondary-font: 'Times New Roman', Times, serif
             
             a
                 color: $fourth-color
-                line-height: 0
+                word-break: break-all
                 +transition(margin 0.5s)
                 span
                     font-size: (0.75rem*$size_scale)
