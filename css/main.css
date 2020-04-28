@@ -126,8 +126,8 @@ body .row {
 }
 
 #page {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 #main_content {
@@ -162,7 +162,7 @@ body .row {
   background-color: #17252a;
   color: #feffff;
   height: 100% !important;
-  width: 15%;
+  width: 14%;
   overflow-y: scroll;
   padding-bottom: 10%;
   padding-left: 0rem !important;
@@ -430,8 +430,8 @@ body .row {
     border-radius: 0.5rem 0.5rem 0.15rem 0.15rem;
   }
   #page {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
   #main_content {
     border-radius: 0.15rem 0.15rem 0.5rem 0.5rem;
@@ -459,7 +459,7 @@ body .row {
     background-color: #17252a;
     color: #feffff;
     height: 100% !important;
-    width: 15%;
+    width: 14%;
     overflow-y: scroll;
     padding-bottom: 10%;
     padding-left: 0rem !important;
@@ -694,8 +694,8 @@ body .row {
     border-radius: 0.75rem 0.75rem 0.225rem 0.225rem;
   }
   #page {
-    padding-left: 1.125rem;
-    padding-right: 1.125rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
   #main_content {
     border-radius: 0.225rem 0.225rem 0.75rem 0.75rem;
@@ -723,7 +723,7 @@ body .row {
     background-color: #17252a;
     color: #feffff;
     height: 100% !important;
-    width: 15%;
+    width: 14%;
     overflow-y: scroll;
     padding-bottom: 10%;
     padding-left: 0rem !important;
@@ -958,8 +958,8 @@ body .row {
     border-radius: 1rem 1rem 0.3rem 0.3rem;
   }
   #page {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
   #main_content {
     border-radius: 0.3rem 0.3rem 1rem 1rem;
@@ -987,7 +987,7 @@ body .row {
     background-color: #17252a;
     color: #feffff;
     height: 100% !important;
-    width: 15%;
+    width: 14%;
     overflow-y: scroll;
     padding-bottom: 10%;
     padding-left: 0rem !important;
@@ -1222,8 +1222,8 @@ body .row {
     border-radius: 1rem 1rem 0.3rem 0.3rem;
   }
   #page {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
   #main_content {
     border-radius: 0.3rem 0.3rem 1rem 1rem;
@@ -1251,7 +1251,7 @@ body .row {
     background-color: #17252a;
     color: #feffff;
     height: 100% !important;
-    width: 15%;
+    width: 14%;
     overflow-y: scroll;
     padding-bottom: 10%;
     padding-left: 0rem !important;
