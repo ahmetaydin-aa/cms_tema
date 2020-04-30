@@ -3,8 +3,10 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="./js/jquery-3.5.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>
         <script>
-            function gist_yukle() {
+            $(document.body).ready(() => {
                 var search_params = new URLSearchParams(window.location.search);
                 if(search_params.has('gist_url') == false) return;
                 var gist_url = search_params.get("gist_url");
@@ -12,10 +14,19 @@
                 if(gist_url.endsWith(".js") == false) {
                     gist_url += ".js";
                 }
-                document.write("<script src='" + gist_url + "'></" + "script>")
-            }
+
+                postscribe('#content', '<script src="' + gist_url + '"><\/script>', {
+                    done: () => {
+                        var links = $("a");
+                        for (var i = 0; i < links.length; ++i) {
+                            links[i].setAttribute('target', '_blank');
+                        }
+                    }
+                });
+            });
         </script>
     </head>
-    <body onload="gist_yukle();">
+    <body>
+        <div id="content"></div>
     </body>
 </html>
