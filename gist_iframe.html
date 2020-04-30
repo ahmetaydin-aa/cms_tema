@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function gist_yukle() {
+                var search_params = new URLSearchParams(window.location.search);
+                if(search_params.has('gist_url') == false) return;
+                var gist_url = search_params.get("gist_url");
+                if(gist_url.startsWith("https://gist.github.com/") == false) return;
+                if(gist_url.endsWith(".js") == false) {
+                    gist_url += ".js";
+                }
+                document.write("<script src='" + gist_url + "'></" + "script>")
+            }
+        </script>
+    </head>
+    <body onload="gist_yukle();">
+    </body>
+</html>
